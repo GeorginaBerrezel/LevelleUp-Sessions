@@ -1,10 +1,11 @@
 :root {
-    --color-grey: #eee;
+    --color-background: rgb(255, 255, 255);
     --color-grey-dark: #ddd;
     --color-black: rgb(57, 57, 57);
-    --color-blackSubtitle: rgb(0, 0, 0);
+    --color-blackSubtitle: rgb(108, 108, 108);
     --color-yellow: #f1c40f;
-    --color-orange: darkorange;
+    --color-orange: #FE9D48;
+    --color-orangeLight: #F7AC79;
 }
 
 body {
@@ -12,26 +13,36 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    background-color: var(--color-grey);
+    background-color: var(--color-background);
     margin: 0;
     width: 100vw;
 }
 
+
 .section {
-    margin: 20px 0;
+    margin: 5rem 0;
 }
 
 .titleh1 {
   font-size: 32px;
   font-weight: 900;
   color: var(--color-black);
+  margin: 1rem 0;
 }
 
 .subtitleh2 {
   font-size: 24px;
   font-weight: bold;
-  color: var(--color-blackSubtitle);
+  color: var(--color-black);
+  margin: 0.5rem O;
 }
+
+.subtitleh3 {
+    font-size: 18.72px;
+    font-weight: bold;
+    color: var(--color-orange);
+    margin: 0.5rem 0;
+  }
 
 /* HEADER */
 .header {
@@ -41,7 +52,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color-grey);
+    background-color: var(--color-background);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 5%);
     width: 100vw;
   }
@@ -169,16 +180,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    /*
     height: 200px;
-    margin-top: 220px;
+    */
+    margin-top: 120px;
   }
   
+  /*
   .hero h2 {
     margin-bottom: 20px;
     word-wrap: break-word;
   }
+  */
   
-  .hero input[type='email'] {
+  .hero input[type='text'] {
     max-width: 275px;
     width: 100%;
     padding: 5px;
@@ -190,7 +205,8 @@ body {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: var(--color-yellow);
+    border-radius: 4px;
+    background-color: var(--color-orange);
   }
   
   .hero input[type='submit']:hover {
@@ -200,6 +216,14 @@ body {
   
   @media (max-width: 750px) {
     .hero {
-      margin-top: 190px;
+      margin-top: 230px;
     }
   }
+
+  /* CONTAINER */
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
