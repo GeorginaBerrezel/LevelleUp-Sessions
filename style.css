@@ -227,3 +227,28 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+/* GRID SECTION */
+
+.price__section {
+    display: flex;
+}
+
+.obligatoire {
+    background-color: var(--color-orangeLight);
+}
+
+.price__section--card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: solid 1px ;
+    margin: 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 5%);
+}
+
+.price__section--title {
+    height: 50px;
+}
